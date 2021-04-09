@@ -3,14 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+// Mi modulo de Heroes
+// Mi modulo de contador
+import { HeroesModule } from './heroes/heroes.module';
+import { ContadorModule } from './contador/contador.module';
+
+
+
+// esto es un decorador
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HeroesModule, 
+    ContadorModule
+    // aqui colocamos los otros modulos
   ],
-  providers: [],
+  providers: [
+    // aqui van los servicios especificos a un modulo
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
