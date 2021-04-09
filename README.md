@@ -39,4 +39,8 @@ Ejemplo:
 
 `ng serve -o`
 
+# Para hacer un punto de version
 
+Ejemplo
+ 
+`git tag -a v0.1.0 -m "Fin seccion 4"`
